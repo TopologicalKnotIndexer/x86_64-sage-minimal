@@ -13,7 +13,7 @@ def get_temp_file_path(): # 获取临时文件的文件名
     return tempfile.mktemp("", get_temp_dir_prefix())
 
 # 将一段 python 代码喂给 sage 执行
-# 并获取其【exit_code，标准输出，标准错误】
+# 并获取其 exit_code，标准输出，标准错误
 def sage_run(python_code:str) -> tuple[int, str, str]:
     tmp_file = get_temp_file_path()                          # 创建临时文件
     open(tmp_file, "w", encoding="utf-8").write(python_code) # 代码写入临时文件

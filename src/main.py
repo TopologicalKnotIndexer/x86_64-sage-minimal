@@ -3,6 +3,7 @@
 
 import sys
 from sage_run import sage_run # 运行 sage 中的 python 脚本
+from sage_run import SAMPLE_CODE
 
 def main():
     input_code = sys.stdin.read()
