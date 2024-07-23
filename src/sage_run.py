@@ -2,9 +2,10 @@
 import os
 import tempfile
 import subprocess
+
+# 请在这里配置 sage 的路径，如果在 PATH 中能够找到则直接使用 "sage"
+SAGE_PATH = "sage"
 DIRNOW    = os.path.dirname(os.path.abspath(__file__))
-SAGE_PATH = os.path.join(DIRNOW, "bin", "sage")
-assert os.path.isfile(SAGE_PATH)
 
 def get_temp_dir_prefix(): # 获取进程、时间、相关的文件名前缀
     return "tmp_sage_run_%07d_" % (os.getpid())
