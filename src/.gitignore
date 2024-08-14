@@ -1,1 +1,2 @@
 bin/portable_sage/**
+*.pyc
