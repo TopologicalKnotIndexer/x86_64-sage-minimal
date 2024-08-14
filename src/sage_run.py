@@ -3,7 +3,7 @@ import os
 import tempfile
 import subprocess
 DIRNOW    = os.path.dirname(os.path.abspath(__file__))
-SAGE_PATH = os.path.join(DIRNOW, "bin", "sage")
+SAGE_PATH = os.path.join(DIRNOW, "bin", "sage.sh")
 assert os.path.isfile(SAGE_PATH)
 
 def get_temp_dir_prefix(): # 获取进程、时间、相关的文件名前缀
