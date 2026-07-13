@@ -1,11 +1,9 @@
-# 从标准输入读入一些 sage 的 python 脚本
-# 执行，并将 exit_code, 标准输出流，标准错误流的内容输出到屏幕
+"""Run Sage-compatible Python read from standard input."""
 
 import sys
-from sage_run import sage_run # 运行 sage 中的 python 脚本
-from sage_run import SAMPLE_CODE
+from sage_run import sage_run
 
-def main():
+def main() -> None:
     input_code = sys.stdin.read()
     print(sage_run(input_code))
 
