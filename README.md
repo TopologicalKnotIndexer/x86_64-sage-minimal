@@ -60,7 +60,7 @@ If you use this repository in academic work, please cite it as:
 
 ```bibtex
 @software{topologicalknotindexer_x86_64_sage_minimal,
-  author = {{TopologicalKnotIndexer contributors}},
+  author = {{GGN\_2015}},
   title = {{x86\_64-sage-minimal}},
   year = {2026},
   url = {https://github.com/TopologicalKnotIndexer/x86_64-sage-minimal}
